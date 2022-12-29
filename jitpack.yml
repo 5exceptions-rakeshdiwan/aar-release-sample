@@ -1,7 +1,0 @@
-before_install:
-   - sdk install java 11.0.10-open
-   - sdk use java 11.0.10-open
-
-install: 
-FILE="-Dfile=aar-release-sample-0.0.1.aar" 
-mvn install:install-file $FILE -DgroupId=com.github.onfuscationSample -DartifactId=aar-release-sample -Dversion=0.0.1 -Dpackaging=aar -DpomFile=pom.xml
